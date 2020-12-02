@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe Game</title>
+  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="#" />
+
+</head>
+
+<body  style="background-image: url('image/banner.jpg');  background-repeat: no-repeat;
+  background-size: 100%;">
+	<div id="main">
+		<div id='tab'>
+			<table>
+				<div class="topic"></div>
+				<tr>
+					<td class="cell" id="0"></td>
+					<td class="cell" id="1"></td>
+					<td class="cell" id="2"></td>
+				</tr>
+				<tr>
+					<td class="cell" id="3"></td>
+					<td class="cell" id="4"></td>
+					<td class="cell" id="5"></td>
+				</tr>
+				<tr>
+					<td class="cell" id="6"></td>
+					<td class="cell" id="7"></td>
+					<td class="cell" id="8"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="endgame">
+			<i class="far fa-grin-alt" style="font-size: 80px;color: yellow;"></i><br>
+			<div class="text"></div>
+			<div>Please refresh to restart the game.</div>
+		</div>
+		
+		<div id="heading"><h3>Press Start button to begin</h3></div>
+		<div id="players">
+
+			<button  id="button" onclick="score()">Start</button>
+			
+			
+		
+			
+		</div>
+		<div id='score' >Welcome Player ! The Game begins...</div>
+	
+	</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>  
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="javascript/style.js">
+
+	setInterval(function(){
+		document.getElementById('score').style.display='none';
+	},7000)</script>
+    
+  
+	
+</body>
+</html>
